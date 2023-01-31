@@ -23,20 +23,22 @@ const SunAndMoon = () => {
     return (
         <SunAndMoonStyled>
             <h2>Sun and Moon</h2>
-            <img src={imgSrc} onMouseEnter={ changeToMoon } onMouseLeave={ changeToSun } />
+            <div className="sunMoonImage">
+                <img
+                    src={imgSrc}
+                    onMouseEnter={ changeToMoon }
+                    onMouseLeave={ changeToSun }
+                />
+            </div>
         </SunAndMoonStyled>
-)
-}
+    )
+};
 
 export default SunAndMoon;
 
 const SunAndMoonStyled = styled.div`
+.sunMoonImage {
     text-align: center;
-
-    h2 {
-        font-size: 50px;
-        color: teal;
-    }
 
     img {
         border: solid 20px teal;
@@ -44,4 +46,5 @@ const SunAndMoonStyled = styled.div`
         padding: 20px;
         background-color: #0c3b3b;
     }
+}
 `;

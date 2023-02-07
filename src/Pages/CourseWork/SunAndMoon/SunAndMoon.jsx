@@ -22,7 +22,7 @@ const SunAndMoon = () => {
     // HTML
     return (
         <SunAndMoonStyled>
-            <h2>Sun and Moon</h2>
+            <h3>Sun and Moon</h3>
             <div className="sunMoonImage">
                 <img
                     src={imgSrc}
